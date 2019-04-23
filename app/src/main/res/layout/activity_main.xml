@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/fl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Custom Popup List"
+            android:textAllCaps="true"
+            android:fontFamily="@font/my_nunito_bold"
+            android:textColor="@color/title"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@+id/fl_toolbar"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="6dp"
+            android:orientation="vertical"
+            >
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textAllCaps="true"
+                android:textColor="@color/subtitle_light"
+                android:fontFamily="@font/my_nunito_bold"
+                android:text="Photos"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                >
+
+                <ImageView
+                    android:id="@+id/iv"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/add_image_bg"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_add_image"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:src="@drawable/ic_add_circle"
+                    android:layout_centerInParent="true"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textAllCaps="true"
+                android:textColor="@color/subtitle_light"
+                android:fontFamily="@font/my_nunito_bold"
+                android:text="Status"
+                android:layout_marginTop="12dp"
+                />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/acet_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MyEditText"
+
+                android:hint="@string/status_hint"
+                android:inputType="none"
+                android:clickable="false"
+                android:focusable="false"
+                />
+
+            <TextView
+                android:id="@+id/tv_error_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/MyErrorText"
+                android:layout_gravity="end"
+                android:layout_marginBottom="8dp"
+
+                android:text="You should add a Status"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textAllCaps="true"
+                android:textColor="@color/subtitle_light"
+                android:fontFamily="@font/my_nunito_bold"
+                android:text="Bio"
+                />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/acet_bio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MyEditText"
+
+                android:hint="@string/bio_hint"
+                android:inputType="textLongMessage"
+                android:maxLength="150"
+                />
+
+            <TextView
+                android:id="@+id/tv_error_bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/MyErrorText"
+                android:layout_gravity="end"
+                android:layout_marginBottom="4dp"
+
+                android:text="You should add a bio"
+                />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <TextView
+            android:id="@+id/tv_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/MyMainRoundedActionButton"
+
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="22dp"
+
+            android:text="@string/save_label"
+            android:elevation="6dp"
+            />
+
+    </FrameLayout>
+
+
+
+
+</RelativeLayout>

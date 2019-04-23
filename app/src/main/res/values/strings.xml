@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Custom-popup-list</string>
+    <string name="age_hint">18</string>
+    <string name="save_label">Save</string>
+    <string name="bio_hint">Add a bio</string>
+    <string name="status_hint">Add a status</string>
+</resources>

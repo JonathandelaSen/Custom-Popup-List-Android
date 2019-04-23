@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/detail_blue</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/detail_blue</item>
+    </style>
+
+    <style name="MyEditText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/subtitle_dark</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:backgroundTint">@drawable/et_tint_color_focused_state</item>
+        <item name="android:fontFamily">@font/my_nunito</item>
+    </style>
+
+    <style name="MyMainRoundedActionButton" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:fontFamily">@font/my_nunito_bold</item>
+        <item name="android:background">@drawable/button_rounded_main_gradient_enabled_state</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:minWidth">160dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingEnd">36dp</item>
+        <item name="android:paddingStart">36dp</item>
+    </style>
+
+    <style name="MyErrorText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/red_validation</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:fontFamily">@font/my_nunito</item>
+    </style>
+
+
+
+    <style name="MainActivity" parent="AppTheme">
+    </style>
+</resources>

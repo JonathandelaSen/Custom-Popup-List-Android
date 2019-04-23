@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MainActivity" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:ambientShadowAlpha">1</item>
+        <item name="android:outlineAmbientShadowColor">@color/feature_outline_ambient_shadow</item>
+        <item name="android:spotShadowAlpha">1</item>
+        <item name="android:outlineSpotShadowColor">@color/feature_outline_spot_shadow</item>
+    </style>
+
+</resources>

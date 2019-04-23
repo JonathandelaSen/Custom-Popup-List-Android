@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="white">#FFF</color>
+
+    <color name="detail_pink">#F52C82</color>
+    <color name="detail_blue">#58B2FE</color>
+
+    <color name="title">#3F4A58</color>
+    <color name="subtitle_dark">#757E90</color>
+    <color name="subtitle_light">#A2AFC0</color>
+
+    <color name="divider">#DEE4EB</color>
+    <color name="divider_darker">#CAD0D7</color>
+
+    <color name="unselected_selectable_text_bg">#EAEAEB</color>
+
+    <color name="red_validation">#FF0033</color>
+    <color name="light_bg_contrast">#F8F8F8</color>
+
+    <color name="feature_outline_ambient_shadow">#00500531</color>
+    <color name="feature_outline_spot_shadow">#5E530535</color>
+
+</resources>
